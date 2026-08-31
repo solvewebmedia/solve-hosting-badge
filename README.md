@@ -11,7 +11,7 @@ Add the script anywhere in the page (footer is fine) and drop an empty container
 where the badge should appear.
 
 ```html
-<script defer src="https://cdn.jsdelivr.net/gh/solvewebmedia/solve-hosting-badge@v1/badge.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/solvewebmedia/solve-hosting-badge@live/badge.min.js"></script>
 
 <div class="solve-hosting"></div>
 ```
@@ -19,7 +19,7 @@ where the badge should appear.
 That's it. The script injects the stylesheet itself, so there is no second
 `<link>` tag to remember.
 
-Use `@v1` on live sites. Only use `@main` when you are testing, since every
+Use `@live` on live sites. Only use `@main` when you are testing, since every
 commit to `main` goes live immediately on anything pointing at it.
 
 ### Multiple badges
@@ -112,8 +112,8 @@ files exactly as they are in the repo, so an uncompiled change will not go live.
 
 ### Releasing
 
-Work on `main`, then merge into the `v1` branch when you're happy. Client sites
-follow `@v1`, so nothing changes for them until that merge happens.
+Work on `main`, then merge into the `live` branch when you're happy. Client sites
+follow `@live`, so nothing changes for them until that merge happens.
 
 Both branches can be pushed from the Source Control panel in VS Code.
 
@@ -124,8 +124,8 @@ up straight away. Purge it at <https://www.jsdelivr.com/tools/purge> and paste
 both URLs:
 
 ```
-https://cdn.jsdelivr.net/gh/solvewebmedia/solve-hosting-badge@v1/badge.min.js
-https://cdn.jsdelivr.net/gh/solvewebmedia/solve-hosting-badge@v1/badge.min.css
+https://cdn.jsdelivr.net/gh/solvewebmedia/solve-hosting-badge@live/badge.min.js
+https://cdn.jsdelivr.net/gh/solvewebmedia/solve-hosting-badge@live/badge.min.css
 ```
 
 The change goes live within about a minute after purging. Hard refresh to
