@@ -29,7 +29,6 @@
         var a = document.createElement('a');
         a.className = 'solve-hosting__button';
         a.href = el.dataset.url || HREF;
-        a.rel = 'noopener';
         a.innerHTML = ICON + '<span>' + (el.dataset.text || TEXT) + '</span>';
 
         el.appendChild(a);
