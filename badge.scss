@@ -1,0 +1,29 @@
+/*!
+* Solve green hosting banner
+*/
+.solve-hosting {
+    &__button {
+        display: flex;
+        gap: 1ch;
+        align-items: center;
+        width: fit-content;
+        font-weight: 700;
+        color: inherit;
+        text-decoration: none;
+        transition: var(--transition, 200ms) ease-in-out;
+
+        &:is(:hover, :focus-visible) {
+            opacity: 0.75;
+        }
+    }
+
+    &__icon {
+        width: 14px;
+        height: auto;
+        flex: 0 0 auto;
+    }
+
+    span {
+        padding-top: 4px; /* optical alignment against the leaf */
+    }
+}
