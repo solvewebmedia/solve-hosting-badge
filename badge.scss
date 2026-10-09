@@ -21,9 +21,6 @@
         width: 14px;
         height: auto;
         flex: 0 0 auto;
-    }
-
-    span {
-        padding-top: 4px; /* optical alignment against the leaf */
+        padding-bottom: 4px; /* optical alignment against the text */
     }
 }
